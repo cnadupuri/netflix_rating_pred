@@ -3,8 +3,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load("model.pkl")
-preprocessor = joblib.load("preprocessor.pkl")
+model = joblib.load("model(netflix).pkl")
+preprocessor = joblib.load("preprocessor(netflix).pkl")
 
 st.title("Netflix Rating Prediction")
 
