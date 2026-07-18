@@ -18,7 +18,7 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v5
       with:
-        python-version: "3.11"
+        python-version: "3.8"
 
     - name: Install Dependencies
       run: |
@@ -27,8 +27,8 @@ jobs:
 
     - name: Verify Model Files
       run: |
-        test -f model.pkl
-        test -f preprocessor.pkl
+        test -f model(netflix).pkl
+        test -f preprocessor(netflix).pkl
 
     - name: Test Model Loading
       run: |
